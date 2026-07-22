@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>最新ランキング</title>
+
+<!-- キャッシュ回避（念のため） -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+<style>
+  body {
+    font-family: -apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",Meiryo,sans-serif;
+    padding:20px; background:#111; color:#fff;
+    line-height: 1.6;
+  }
+  h1 { margin: 0 0 14px; font-size: 28px; }
+  .btn {
+    display:inline-block; padding:12px 14px; border-radius:12px; text-decoration:none;
+    border:1px solid #666; color:#fff; margin: 8px 10px 8px 0;
+  }
+  .btn:hover { border-color:#aaa; }
+  .btn-primary { border-color:#00ffcc; }
+  .sub { opacity:0.75; font-size:14px; margin-top:12px; }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+</style>
+</head>
+
+<body>
+  <h1>最新ランキング</h1>
+
+  <p>
+    <a class="btn btn-primary" href="rank_latest_view.html">ランキングを見る</a>
+
+    <a class="btn"
+       href="https://github.com/k-namickey/rank-tracker/actions/workflows/update_rank.yml"
+       target="_blank" rel="noopener noreferrer">
+      今すぐ更新（手動）
+    </a>
+  </p>
+
+  <p class="sub">
+    「今すぐ更新（手動）」を押すと GitHub に移動します。そこで <b>Run workflow</b> を押してください（数分で反映）。
+  </p>
+
+  <p class="sub mono">
+    固定URL: https://k-namickey.github.io/rank-tracker/
+  </p>
+</body>
+</html>

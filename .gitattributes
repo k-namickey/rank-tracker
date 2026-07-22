@@ -1,0 +1,6 @@
+rank_plots/** merge=ours
+rank_text/**  merge=ours
+rank_latest_view.html merge=ours
+rank_plots/** -text
+rank_text/**  -text
+*.png -text
