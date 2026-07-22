@@ -1,0 +1,35 @@
+
+__pycache__/
+.DS_Store
+.mplconfig/
+*.log
+launchd.log
+launchd.log*
+rank_history.csv.bak
+
+# lock files
+.fetch_rank.lock
+
+.DS_Store
+
+# ===== local generated/cache files =====
+.driver_cache/
+.mplconfig/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Logs
+launchd.log
+launchd.log.*
+cron.log
+run_log.txt
+
+# Locks
+.fetch_rank.lock
+*.lock
+
+# Backup/editor files
+*.bak
+*.save
+*_backup*

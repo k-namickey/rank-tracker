@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rank Latest</title>
+<style>
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+  margin: 16px;
+}
+h1 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+.updated-at {
+  margin: 0 0 12px;
+  color: #666;
+  font-size: 13px;
+}
+.note {
+  margin: 0 0 12px;
+  color: #888;
+  font-size: 12px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 8px;
+  vertical-align: top;
+}
+th {
+  text-align: left;
+  background: #f7f7f7;
+}
+td.check {
+  width: 44px;
+  text-align: center;
+}
+td.rank {
+  width: 70px;
+  font-size: 18px;
+  font-weight: 700;
+}
+td.links {
+  width: 110px;
+  white-space: nowrap;
+}
+.area {
+  color: #666;
+  font-size: 12px;
+  margin-top: 2px;
+}
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.shop-name {
+  font-weight: 600;
+  cursor: pointer;
+}
+.check-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+  background: #fff;
+  color: #aaa;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.check-btn:hover {
+  border-color: #666;
+  color: #333;
+}
+tr.checked {
+  background: #eeeeee;
+  opacity: 0.55;
+}
+tr.checked .check-btn {
+  background: #333;
+  color: #fff;
+  border-color: #333;
+}
+tr.checked .shop-name {
+  text-decoration: line-through;
+}
+</style>
+</head>
+<body>
+<h1>最新ランキング</h1>
+<div class="updated-at">最終更新：2026-09-07 06:00:06 JST</div>
+<div class="note">店舗名をクリックすると自動でチェック済みになり、約0.1秒後に別タブで店舗ページを開きます。左の✓でも手動チェックできます。リロードでリセットされます。</div>
+
+<table>
+<thead>
+<tr><th>済</th><th>順位</th><th>店舗</th><th>画像</th></tr>
+</thead>
+<tbody>
+<tr data-shop="ねこねこ"><td class="check"><button type="button" class="check-btn" data-shop="ねこねこ">✓</button></td><td class="rank">1</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/atsugi/honatsugi-station/asian/" target="_blank" rel="noopener noreferrer" data-shop="ねこねこ">ねこねこ</a><div class="area">本厚木</div></td><td class="links"><a href="rank_plots/%E3%81%AD%E3%81%93%E3%81%AD%E3%81%93.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E3%81%AD%E3%81%93%E3%81%AD%E3%81%93.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="アリスー行徳"><td class="check"><button type="button" class="check-btn" data-shop="アリスー行徳">✓</button></td><td class="rank">3</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/urayasu/gyotoku-station/asian/" target="_blank" rel="noopener noreferrer" data-shop="アリスー行徳">アリスー行徳</a><div class="area">行徳</div></td><td class="links"><a href="rank_plots/%E3%82%A2%E3%83%AA%E3%82%B9%E3%83%BC%E8%A1%8C%E5%BE%B3.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E3%82%A2%E3%83%AA%E3%82%B9%E3%83%BC%E8%A1%8C%E5%BE%B3.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="ジャスミン"><td class="check"><button type="button" class="check-btn" data-shop="ジャスミン">✓</button></td><td class="rank">3</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/kameari/asian/" target="_blank" rel="noopener noreferrer" data-shop="ジャスミン">ジャスミン</a><div class="area">亀有駅</div></td><td class="links"><a href="rank_plots/%E3%82%B8%E3%83%A3%E3%82%B9%E3%83%9F%E3%83%B3.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E3%82%B8%E3%83%A3%E3%82%B9%E3%83%9F%E3%83%B3.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="ドキドキSPA"><td class="check"><button type="button" class="check-btn" data-shop="ドキドキSPA">✓</button></td><td class="rank">3</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/funabashi/nishifunabashi-station/asian/" target="_blank" rel="noopener noreferrer" data-shop="ドキドキSPA">ドキドキSPA</a><div class="area">西船橋駅周辺</div></td><td class="links"><a href="rank_plots/%E3%83%89%E3%82%AD%E3%83%89%E3%82%ADSPA.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E3%83%89%E3%82%AD%E3%83%89%E3%82%ADSPA.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="桜香源"><td class="check"><button type="button" class="check-btn" data-shop="桜香源">✓</button></td><td class="rank">3</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/matsudo/shinmatsudo-station/asian/" target="_blank" rel="noopener noreferrer" data-shop="桜香源">桜香源</a><div class="area">新松戸駅周辺</div></td><td class="links"><a href="rank_plots/%E6%A1%9C%E9%A6%99%E6%BA%90.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E6%A1%9C%E9%A6%99%E6%BA%90.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="究極ラヴァーズ"><td class="check"><button type="button" class="check-btn" data-shop="究極ラヴァーズ">✓</button></td><td class="rank">3</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/kashiwa/asian/" target="_blank" rel="noopener noreferrer" data-shop="究極ラヴァーズ">究極ラヴァーズ</a><div class="area">柏・我孫子エリア</div></td><td class="links"><a href="rank_plots/%E7%A9%B6%E6%A5%B5%E3%83%A9%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%BA.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E7%A9%B6%E6%A5%B5%E3%83%A9%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%BA.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="天使のSPA"><td class="check"><button type="button" class="check-btn" data-shop="天使のSPA">✓</button></td><td class="rank">4</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/nerima/nerima-station/asian/" target="_blank" rel="noopener noreferrer" data-shop="天使のSPA">天使のSPA</a><div class="area">練馬駅周辺</div></td><td class="links"><a href="rank_plots/%E5%A4%A9%E4%BD%BF%E3%81%AESPA.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E5%A4%A9%E4%BD%BF%E3%81%AESPA.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="甘々チューチュー本八幡"><td class="check"><button type="button" class="check-btn" data-shop="甘々チューチュー本八幡">✓</button></td><td class="rank">5</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/ichikawa/motoyawata-station/asian/" target="_blank" rel="noopener noreferrer" data-shop="甘々チューチュー本八幡">甘々チューチュー本八幡</a><div class="area">本八幡駅・京成八幡駅周辺</div></td><td class="links"><a href="rank_plots/%E7%94%98%E3%80%85%E3%83%81%E3%83%A5%E3%83%BC%E3%83%81%E3%83%A5%E3%83%BC%E6%9C%AC%E5%85%AB%E5%B9%A1.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E7%94%98%E3%80%85%E3%83%81%E3%83%A5%E3%83%BC%E3%83%81%E3%83%A5%E3%83%BC%E6%9C%AC%E5%85%AB%E5%B9%A1.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="～ネオン～"><td class="check"><button type="button" class="check-btn" data-shop="～ネオン～">✓</button></td><td class="rank">5</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/kameari/asian/" target="_blank" rel="noopener noreferrer" data-shop="～ネオン～">～ネオン～</a><div class="area">亀有駅</div></td><td class="links"><a href="rank_plots/%EF%BD%9E%E3%83%8D%E3%82%AA%E3%83%B3%EF%BD%9E.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%EF%BD%9E%E3%83%8D%E3%82%AA%E3%83%B3%EF%BD%9E.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="月姫"><td class="check"><button type="button" class="check-btn" data-shop="月姫">✓</button></td><td class="rank">6</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/shinsakae/asian/" target="_blank" rel="noopener noreferrer" data-shop="月姫">月姫</a><div class="area">新栄町・千種・今池エリア</div></td><td class="links"><a href="rank_plots/%E6%9C%88%E5%A7%AB.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E6%9C%88%E5%A7%AB.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="アリスー幕張本郷"><td class="check"><button type="button" class="check-btn" data-shop="アリスー幕張本郷">✓</button></td><td class="rank">7</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/chiba/asian/" target="_blank" rel="noopener noreferrer" data-shop="アリスー幕張本郷">アリスー幕張本郷</a><div class="area">幕張本郷駅</div></td><td class="links"><a href="rank_plots/%E3%82%A2%E3%83%AA%E3%82%B9%E3%83%BC%E5%B9%95%E5%BC%B5%E6%9C%AC%E9%83%B7.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E3%82%A2%E3%83%AA%E3%82%B9%E3%83%BC%E5%B9%95%E5%BC%B5%E6%9C%AC%E9%83%B7.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="愛の憩"><td class="check"><button type="button" class="check-btn" data-shop="愛の憩">✓</button></td><td class="rank">7</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/kumagaya/kumagaya-city/asian/" target="_blank" rel="noopener noreferrer" data-shop="愛の憩">愛の憩</a><div class="area">熊谷市内</div></td><td class="links"><a href="rank_plots/%E6%84%9B%E3%81%AE%E6%86%A9.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E6%84%9B%E3%81%AE%E6%86%A9.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="百合"><td class="check"><button type="button" class="check-btn" data-shop="百合">✓</button></td><td class="rank">8</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/yokohama/higashikanagawa-station/asian/" target="_blank" rel="noopener noreferrer" data-shop="百合">百合</a><div class="area">東神奈川駅周辺</div></td><td class="links"><a href="rank_plots/%E7%99%BE%E5%90%88.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E7%99%BE%E5%90%88.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="Loveの夜"><td class="check"><button type="button" class="check-btn" data-shop="Loveの夜">✓</button></td><td class="rank">9</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/yamato/yamato-station/asian/" target="_blank" rel="noopener noreferrer" data-shop="Loveの夜">Loveの夜</a><div class="area">大和駅周辺</div></td><td class="links"><a href="rank_plots/Love%E3%81%AE%E5%A4%9C.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/Love%E3%81%AE%E5%A4%9C.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="チャンス～Chance～"><td class="check"><button type="button" class="check-btn" data-shop="チャンス～Chance～">✓</button></td><td class="rank">9</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/kokubunji/kokubunji-station/asian/" target="_blank" rel="noopener noreferrer" data-shop="チャンス～Chance～">チャンス～Chance～</a><div class="area">国分寺駅</div></td><td class="links"><a href="rank_plots/%E3%83%81%E3%83%A3%E3%83%B3%E3%82%B9%EF%BD%9EChance%EF%BD%9E.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E3%83%81%E3%83%A3%E3%83%B3%E3%82%B9%EF%BD%9EChance%EF%BD%9E.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="甘々チューチュー荻窪"><td class="check"><button type="button" class="check-btn" data-shop="甘々チューチュー荻窪">✓</button></td><td class="rank">11</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/ogikubo/ogikubo-station/asian/" target="_blank" rel="noopener noreferrer" data-shop="甘々チューチュー荻窪">甘々チューチュー荻窪</a><div class="area">荻窪駅</div></td><td class="links"><a href="rank_plots/%E7%94%98%E3%80%85%E3%83%81%E3%83%A5%E3%83%BC%E3%83%81%E3%83%A5%E3%83%BC%E8%8D%BB%E7%AA%AA.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E7%94%98%E3%80%85%E3%83%81%E3%83%A5%E3%83%BC%E3%83%81%E3%83%A5%E3%83%BC%E8%8D%BB%E7%AA%AA.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="酔心♡よいこころ"><td class="check"><button type="button" class="check-btn" data-shop="酔心♡よいこころ">✓</button></td><td class="rank">11</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/shizuoka/shizuoka-city/asian/" target="_blank" rel="noopener noreferrer" data-shop="酔心♡よいこころ">酔心♡よいこころ</a><div class="area">静岡市内</div></td><td class="links"><a href="rank_plots/%E9%85%94%E5%BF%83%E2%99%A1%E3%82%88%E3%81%84%E3%81%93%E3%81%93%E3%82%8D.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E9%85%94%E5%BF%83%E2%99%A1%E3%82%88%E3%81%84%E3%81%93%E3%81%93%E3%82%8D.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="姫（ひめ）"><td class="check"><button type="button" class="check-btn" data-shop="姫（ひめ）">✓</button></td><td class="rank">14</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/shizuoka/shizuoka-city/asian/" target="_blank" rel="noopener noreferrer" data-shop="姫（ひめ）">姫（ひめ）</a><div class="area">静岡市内</div></td><td class="links"><a href="rank_plots/%E5%A7%AB%EF%BC%88%E3%81%B2%E3%82%81%EF%BC%89.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E5%A7%AB%EF%BC%88%E3%81%B2%E3%82%81%EF%BC%89.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="天使の翼"><td class="check"><button type="button" class="check-btn" data-shop="天使の翼">✓</button></td><td class="rank">16</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/tsu/tsu-city/asian/" target="_blank" rel="noopener noreferrer" data-shop="天使の翼">天使の翼</a><div class="area">津市内</div></td><td class="links"><a href="rank_plots/%E5%A4%A9%E4%BD%BF%E3%81%AE%E7%BF%BC.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E5%A4%A9%E4%BD%BF%E3%81%AE%E7%BF%BC.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="淑女の手"><td class="check"><button type="button" class="check-btn" data-shop="淑女の手">✓</button></td><td class="rank">16</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/shizuoka/shizuoka-city/asian/" target="_blank" rel="noopener noreferrer" data-shop="淑女の手">淑女の手</a><div class="area">静岡市内</div></td><td class="links"><a href="rank_plots/%E6%B7%91%E5%A5%B3%E3%81%AE%E6%89%8B.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E6%B7%91%E5%A5%B3%E3%81%AE%E6%89%8B.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="濡れ濡れピーチ"><td class="check"><button type="button" class="check-btn" data-shop="濡れ濡れピーチ">✓</button></td><td class="rank">20</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/shizuoka/shizuoka-city/asian/" target="_blank" rel="noopener noreferrer" data-shop="濡れ濡れピーチ">濡れ濡れピーチ</a><div class="area">静岡市内</div></td><td class="links"><a href="rank_plots/%E6%BF%A1%E3%82%8C%E6%BF%A1%E3%82%8C%E3%83%94%E3%83%BC%E3%83%81.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E6%BF%A1%E3%82%8C%E6%BF%A1%E3%82%8C%E3%83%94%E3%83%BC%E3%83%81.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="癒心"><td class="check"><button type="button" class="check-btn" data-shop="癒心">✓</button></td><td class="rank">21</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/shizuoka/shizuoka-city/asian/" target="_blank" rel="noopener noreferrer" data-shop="癒心">癒心</a><div class="area">静岡市内</div></td><td class="links"><a href="rank_plots/%E7%99%92%E5%BF%83.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E7%99%92%E5%BF%83.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="夜の恋人"><td class="check"><button type="button" class="check-btn" data-shop="夜の恋人">✓</button></td><td class="rank">25</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/shizuoka/shizuoka-city/asian/" target="_blank" rel="noopener noreferrer" data-shop="夜の恋人">夜の恋人</a><div class="area">静岡市内</div></td><td class="links"><a href="rank_plots/%E5%A4%9C%E3%81%AE%E6%81%8B%E4%BA%BA.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E5%A4%9C%E3%81%AE%E6%81%8B%E4%BA%BA.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+<tr data-shop="甘い彼女"><td class="check"><button type="button" class="check-btn" data-shop="甘い彼女">✓</button></td><td class="rank">30</td><td class="shop"><a class="shop-name" href="https://www.esthe-ranking.jp/shizuoka/shizuoka-city/asian/" target="_blank" rel="noopener noreferrer" data-shop="甘い彼女">甘い彼女</a><div class="area">静岡市内</div></td><td class="links"><a href="rank_plots/%E7%94%98%E3%81%84%E5%BD%BC%E5%A5%B3.png" target="_blank" rel="noopener noreferrer">plot</a><span> / </span><a href="rank_text/%E7%94%98%E3%81%84%E5%BD%BC%E5%A5%B3.png" target="_blank" rel="noopener noreferrer">text</a></td></tr>
+</tbody>
+</table>
+
+<script>
+(function () {
+  var checked = {};
+
+  function markRow(shop) {
+    var rows = document.querySelectorAll("tr[data-shop]");
+    rows.forEach(function (row) {
+      if (row.getAttribute("data-shop") === shop) {
+        row.classList.add("checked");
+      }
+    });
+  }
+
+  function unmarkRow(shop) {
+    var rows = document.querySelectorAll("tr[data-shop]");
+    rows.forEach(function (row) {
+      if (row.getAttribute("data-shop") === shop) {
+        row.classList.remove("checked");
+      }
+    });
+  }
+
+  function toggle(shop) {
+    if (!shop) {
+      return;
+    }
+
+    if (checked[shop]) {
+      delete checked[shop];
+      unmarkRow(shop);
+    } else {
+      checked[shop] = true;
+      markRow(shop);
+    }
+  }
+
+  function mark(shop) {
+    if (!shop) {
+      return;
+    }
+
+    checked[shop] = true;
+    markRow(shop);
+  }
+
+  document.querySelectorAll(".check-btn").forEach(function (button) {
+    button.addEventListener("click", function () {
+      toggle(button.getAttribute("data-shop"));
+    });
+  });
+
+  document.querySelectorAll(".shop-name").forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      var shop = link.getAttribute("data-shop");
+      var href = link.getAttribute("href");
+
+      mark(shop);
+
+      if (href) {
+        event.preventDefault();
+        setTimeout(function () {
+          window.open(href, "_blank", "noopener,noreferrer");
+        }, 100);
+      }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
